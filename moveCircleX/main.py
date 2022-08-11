@@ -16,7 +16,6 @@ BLACK = display.create_pen(0,0,0)
 def clear():
     display.set_pen(BLACK)
     display.clear()
-    display.update()
 
 # Hidden black square following behind the circle being drawn, to clear up 
 # it's path, without having to perform a full display clear
