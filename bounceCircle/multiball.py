@@ -48,8 +48,8 @@ for i in range(0, ballCount):
     radius = random.randint(5,15)
     startX = random.randrange(radius+1,w-radius)
     startY = random.randrange(radius+1,h-radius)
-    startDx = random.randint(-10,10)
-    startDy = random.randint(-10,10)
+    startDx = random.choice([-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10])
+    startDy = random.choice([-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10])
     startColour = random.randrange(0, len(colours))
     balls.append(
         Ball(startX, startY, radius, startDx, 
